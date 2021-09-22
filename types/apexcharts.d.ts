@@ -487,7 +487,7 @@ type ApexPlotOptions = {
     columnWidth?: string
     barHeight?: string
     distributed?: boolean
-    borderRadius?: number
+    borderRadius?: number | number[]
     rangeBarOverlap?: boolean
     rangeBarGroupRows?: boolean
     colors?: {
@@ -708,7 +708,8 @@ type ApexFill = {
     inverseColors?: boolean
     opacityFrom?: number
     opacityTo?: number
-    stops?: number[]
+    stops?: number[],
+    colorStops?: any[]
   }
   image?: {
     src?: string | string[]
